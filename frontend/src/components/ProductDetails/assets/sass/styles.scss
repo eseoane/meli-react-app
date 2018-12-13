@@ -1,0 +1,73 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+
+.details-container {
+  display: block;
+  margin: 0 auto;
+
+  .details {
+    display: flex;
+    background-color: $background_white;
+    margin: 16px 0;
+    padding: 32px;
+
+    .description-container {
+      flex: 1 auto;
+
+      .image {
+        width: 680px;
+
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+
+      .description {
+        h2 {
+          font-size: 28px;
+        }
+
+        .text {
+          font-size: 16px;
+          color: $color_secondary;
+          white-space: pre-line;
+        }
+      }
+    }
+  }
+
+  .info-container {
+    min-width: 350px;
+
+    .button-primary {
+      background: #3483fa;
+      border: 0 #3483fa;
+      color: #ffffff;
+      display: inline-block;
+      width: 100%;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .condition {
+      font-size: 14px;
+      padding-bottom: 16px;
+    }
+
+    .price {
+      font-size: 46px;
+      padding: 32px 0;
+      margin-right: 5px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Emmanuel Seoane",
+      "email": "emmanuel.seoane@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-4-grid": "^2.4.1",
+    "css-loader": "^2.0.0",
+    "currency-symbol-map": "^4.0.4",
+    "node-sass-chokidar": "^1.3.4",
+    "query-string": "^6.2.0",
+    "react": "^16.6.3",
+    "react-currency-format": "^1.0.0",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-md-spinner": "^0.3.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "sass-lint": "^1.12.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

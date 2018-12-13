@@ -1,0 +1,87 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+@import "variables";
+
+
+
+.header-container {
+  background-color: $background_secondary;
+
+  .header {
+    border: 0;
+    position: relative;
+    font-size: 14px;
+
+    .nav {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .search-box {
+      display: inline-block;
+      padding: 8px 0;
+      overflow: auto;
+      position: relative;
+      width: calc(100% - 53px - 20px);
+    }
+
+    .logo {
+      text-indent: -9999px;
+      display: inline-block;
+      background-image: url($assets_logo);
+      background-repeat: no-repeat;
+      height: $assets_logo_h;
+      width: $assets_logo_w;
+      vertical-align: top;
+      margin: 10px 20px 10px 0;
+      @include imgRetina($assets_logo_retina, $assets_logo_retina_w, $assets_logo_retina_h);
+    }
+
+    .search-input {
+      color: $color_primary;
+      font-size: 18px;
+      width: 100%;
+      margin: 0;
+      border: none;
+      position: relative;
+      box-sizing: border-box;
+      padding: 7px 60px 9px 15px;
+      background-color: $background_white;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      height: 39px;
+    }
+
+    .search-btn {
+      position: absolute;
+      font-size: 16px;
+      border: none;
+      color: $color_grey;
+      line-height: 1em;
+      outline: 0;
+      border-radius: 0 2px 2px 0;
+      width: 46px;
+      top: 8px;
+      right: 0;
+      left: auto;
+      background: $background_primary none 0 0;
+      height: 39px;
+      padding: 2px 0 0;
+      cursor: pointer;
+
+      span {
+        display: none;
+      }
+    }
+
+    .search-icon {
+      background-image: url($assets_search);
+      width: $icon_size;
+      height: $icon_size;
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      @include imgRetina($assets_search_retina, $icon_size_retina, $icon_size_retina);
+    }
+  }
+}

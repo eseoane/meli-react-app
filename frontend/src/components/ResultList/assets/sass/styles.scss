@@ -1,0 +1,15 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+
+.search-container {
+  background: $background_white;
+  display: block;
+  margin: 0 auto;
+
+  ol {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+}
